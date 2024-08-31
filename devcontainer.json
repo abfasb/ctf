@@ -1,0 +1,11 @@
+{
+    "name": "CTF Environment",
+    "image": "mcr.microsoft.com/linux/ubuntu:latest",
+    "extensions": [
+      "ms-vscode.cpptools",
+      "ms-python.python",
+      "vscoss.vscode-ansible"
+    ],
+    "postCreateCommand": "apt-get update && apt-get install -y john nmap gobuster binwalk radare2 steghide"
+  }
+  
